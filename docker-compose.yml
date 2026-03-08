@@ -39,6 +39,7 @@ services:
 volumes:
   mysql_data:
     name: mysql_data
+    external: true
 
 networks:
   twotier:
