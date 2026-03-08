@@ -1,0 +1,43 @@
+mysql_data/
+.env
+# Python & Flask-specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+.cache/
+.nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Flask instance and cache
+instance/
+.webassets-cache/
+
+# IDE & editor files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Docker-specific
+.dockerignore
+Dockerfile
+.docker/   
