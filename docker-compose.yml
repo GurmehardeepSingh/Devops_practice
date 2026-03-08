@@ -38,6 +38,7 @@ services:
     restart: always
 volumes:
   mysql_data:
+    name: mysql_data
 
 networks:
   twotier:
