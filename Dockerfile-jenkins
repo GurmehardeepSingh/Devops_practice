@@ -2,10 +2,12 @@ FROM jenkins/jenkins:lts
 
 USER root
 
+# Install Docker CLI + Compose V2
 RUN apt-get update \
- && apt-get install -y docker.io docker-compose \
- && groupmod -g 984 docker \
- && usermod -aG docker jenkins \
+ && apt-get install -y docker.io curl git \
+ && mkdir -p /usr/lib/docker/cli-plugins \
+ && curl -SL https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-linux-x86_64 -o /usr/lib/docker/cli-plugins/docker-compose \
+ && chmod +x /usr/lib/docker/cli-plugins/docker-compose \
  && rm -rf /var/lib/apt/lists/*
 
 USER jenkins
