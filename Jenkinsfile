@@ -55,6 +55,7 @@ post{
         subject: "Build Failed",
         body: "Bad News: Your build failed",
         to: "sgurmehardeep@gmail.com" 
-        )	
-	}  
+        )
+	}	
+}  
 }
