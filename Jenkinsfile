@@ -41,5 +41,20 @@ pipeline{
             }
         }
     }
-    
+
+post{
+   success{
+	emailtext (
+	subject: "Build Successful",
+	body: "Good News: Your build was successful!",
+	to: 'sgurmehardeep@gmail.com" 
+	)	
+	}
+   failure{
+        emailtext (
+        subject: "Build Failed",
+        body: "Bad News: Your build failed",
+        to: 'sgurmehardeep@gmail.com" 
+        )	
+	}  
 }
