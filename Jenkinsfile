@@ -47,14 +47,14 @@ post{
 	emailtext (
 	subject: "Build Successful",
 	body: "Good News: Your build was successful!",
-	to: 'sgurmehardeep@gmail.com" 
+	to: "sgurmehardeep@gmail.com" 
 	)	
 	}
    failure{
         emailtext (
         subject: "Build Failed",
         body: "Bad News: Your build failed",
-        to: 'sgurmehardeep@gmail.com" 
+        to: "sgurmehardeep@gmail.com" 
         )	
 	}  
 }
